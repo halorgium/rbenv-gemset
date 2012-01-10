@@ -1,4 +1,4 @@
-unset GEM_HOME GEM_PATH
+rbenv-gemset active >/dev/null 2>&1 && unset GEM_HOME GEM_PATH
 
 if [ "$(rbenv-version-name)" = "system" ]; then
   RBENV_GEMSET_ROOT="$(rbenv-gemset system-root)"
